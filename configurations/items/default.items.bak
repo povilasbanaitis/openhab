@@ -1,0 +1,5 @@
+Group	All
+Number	temp	"Temperature [%.1f °C]"	<temperature>	{ mqtt="<[broker:/home/office/temperature/:state:default]" }
+String	Arduino	"Arduino [%s]"	{ serial="/dev/ttyACM0" }
+Number	Arduino_weight	"Weight [%d]"	<temperature>
+String	Arduino_temperature	"Temperature [%s]"

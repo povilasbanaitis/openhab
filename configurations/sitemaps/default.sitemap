@@ -1,0 +1,6 @@
+sitemap demo label="Main Menux"
+{
+ 	Frame label="SERIALX" {   
+		Text item=Arduino
+	 }
+}
