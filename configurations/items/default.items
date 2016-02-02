@@ -1,4 +1,3 @@
 Group	All
 String Arduino "Arduino [%s]" (arduino) {serial="/dev/ttyACM0"}  
-
-
+String Arduino_weight "Weight [%s]"

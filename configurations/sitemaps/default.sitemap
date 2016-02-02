@@ -2,5 +2,6 @@ sitemap demo label="Main Menu"
 {
  	Frame label="SERIAL" {   
 		Text item=Arduino
+		Text item=Arduino_weight
 	 }
 }
