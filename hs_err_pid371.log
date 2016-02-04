@@ -1,0 +1,114 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGBUS (0x7) at pc=0xb60d5860, pid=371, tid=2858013792
+#
+# JRE version: Java(TM) SE Runtime Environment (8.0-b132) (build 1.8.0-b132)
+# Java VM: Java HotSpot(TM) Client VM (25.0-b70 mixed mode linux-arm )
+# Problematic frame:
+# C  [libzip.so+0xf860]  newEntry+0x6c
+#
+# Failed to write core dump. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.sun.com/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x014c9b88):  JavaThread "Component Resolve Thread (Bundle 98)" daemon [_thread_in_native, id=1285, stack(0xaa54e000,0xaa59e000)]
+
+siginfo:si_signo=SIGBUS: si_errno=0, si_code=2 (BUS_ADRERR), si_addr=0xab3d8e9a
+
+Registers:
+  r0  = 0xab58ab98
+  r1  = 0x00000000
+  r2  = 0x00110000
+  r3  = 0xab3d8000
+  r4  = 0xab3d8e8d
+  r5  = 0xaa00b5e0
+  r6  = 0xab58ab98
+  r7  = 0xa904d018
+  r8  = 0xaaa11200
+  r9  = 0xac2ec0e0
+  r10 = 0x014c9b88
+  fp  = 0xaa59b348
+  r12 = 0xab58ab98
+  sp  = 0xaa59b2b0
+  lr  = 0xb6db9dc4
+  pc  = 0xb60d5860
+  cpsr = 0x20000010
+
+Top of Stack: (sp=0xaa59b2b0)
+0xaa59b2b0:   014c9b88 aa59b30c 00000010 b690c28c
+0xaa59b2c0:   ac2467f6 aa59b350 aa59b30c 00000010
+0xaa59b2d0:   aa59b2f8 b415c6e4 aa59b2e4 00000001
+0xaa59b2e0:   00000000 aa00b5e0 00000000 b690c28c
+0xaa59b2f0:   ac2ec0d8 aa00b5e0 00000000 b690c28c
+0xaa59b300:   ac2ec0d8 aaa11200 ac2ec0e0 014c9b88
+0xaa59b310:   aa59b348 b60d6cb4 ffffffff aa00b5e0
+0xaa59b320:   ffffffff b60c8f48 ffffffff b43b1a04 
+
+Instructions: (pc=0xb60d5860)
+0xb60d5840:   e3a030a0 e58d3000 e1c720d8 e1a00005
+0xb60d5850:   ebffffa7 e1a04000 e3540000 0a000092
+0xb60d5860:   e5d4000d e5d4100e e5d4300c e5d4200f
+0xb60d5870:   e1833400 e1812402 e5d4c020 e1832802 
+
+Register to memory mapping:
+
+  r0  = 0xab58ab98
+0xab58ab98 is an unknown value
+
+  r1  = 0x00000000
+0x00000000 is an unknown value
+
+  r2  = 0x00110000
+0x00110000 is an unknown value
+
+  r3  = 0xab3d8000
+0xab3d8000 is an unknown value
+
+  r4  = 0xab3d8e8d
+0xab3d8e8d is an unknown value
+
+  r5  = 0xaa00b5e0
+0xaa00b5e0 is an unknown value
+
+  r6  = 0xab58ab98
+0xab58ab98 is an unknown value
+
+  r7  = 0xa904d018
+0xa904d018 is an unknown value
+
+  r8  = 0xaaa11200
+0xaaa11200 is an unknown value
+
+  r9  = 0xac2ec0e0
+0xac2ec0e0 is an unknown value
+
+  r10 = 0x014c9b88
+0x014c9b88 is a thread
+
+  fp  = 0xaa59b348
+0xaa59b348 is pointing into the stack for thread: 0x014c9b88
+
+  r12 = 0xab58ab98
+0xab58ab98 is an unknown value
+
+  sp  = 0xaa59b2b0
+0xaa59b2b0 is pointing into the stack for thread: 0x014c9b88
+
+  lr  = 0xb6db9dc4
+0xb6db9dc4: __libc_malloc+0x80 in /lib/arm-linux-gnueabihf/libc.so.6 at 0xb6d46000
+
+  pc  = 0xb60d5860
+0xb60d5860: <offset 0xf860> in /usr/lib/jvm/jdk-8-oracle-arm-vfp-hflt/jre/lib/arm/libzip.so at 0xb60c6000
+
+
+
+Stack: [0xaa54e000,0xaa59e000],  sp=0xaa59b2b0,  free space=308k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [libzip.so+0xf860]  newEntry+0x6c
